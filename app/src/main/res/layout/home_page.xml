@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:background="#3B71CA"
+        android:text="AcademicHub"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:padding="10sp"
+        android:gravity="center_vertical"
+        />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_section"
+        android:name="com.example.academichub.HomePageFragment.HomeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.82" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:background="@drawable/nav_bottom"
+        android:backgroundTint="@color/primary"
+        android:weightSum="1"
+        android:gravity="center_horizontal"
+        android:padding="10px"
+        >
+        <Button
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:drawableTop="@drawable/home"
+            android:text="Home"
+            android:textSize="8dp"
+            android:drawableTint="@color/white"
+            android:backgroundTint="@color/primary"
+            android:background="@android:color/transparent"
+            />
+
+        <Button
+            android:id="@+id/attendance"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.27"
+            android:drawableTop="@drawable/attendance"
+            android:text="Attendance"
+            android:drawableTint="@color/white"
+            android:textSize="8dp"
+            android:backgroundTint="@color/primary"
+            android:background="@android:color/transparent"
+            />
+
+
+        <Button
+            android:id="@+id/create_join"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:drawableTop="@drawable/add_icon"
+            android:text="Join"
+            android:textSize="8dp"
+            android:backgroundTint="@color/primary"
+            android:drawableTint="@color/white"
+            android:background="@android:color/transparent"
+            />
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:drawableTop="@drawable/user"
+            android:drawableTint="@color/white"
+            android:text="Profile"
+            android:textSize="8dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@color/primary"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1095703267421",
+    "project_id": "academichub-7615a",
+    "storage_bucket": "academichub-7615a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095703267421:android:7bfc32f96b18b18b9fe5b4",
+        "android_client_info": {
+          "package_name": "com.example.academichub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095703267421-onu1fv8ii4trrjvupc93tc0l0n0s7vtm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMUbAkc14_2MZWz_6mq4qRujloKoyhl4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095703267421-onu1fv8ii4trrjvupc93tc0l0n0s7vtm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
