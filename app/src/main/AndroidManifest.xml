@@ -20,6 +20,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".StudentMarkPage"
+            android:exported="false" />
+        <activity
             android:name=".DetailedAttendance"
             android:exported="false" />
         <activity
@@ -29,7 +32,7 @@
             android:name=".ClassRoomPage"
             android:exported="false" />
         <activity
-            android:name=".CreateClassroom"
+            android:name=".CreateClassroomPage"
             android:exported="true" />
         <activity
             android:name=".HomePage"

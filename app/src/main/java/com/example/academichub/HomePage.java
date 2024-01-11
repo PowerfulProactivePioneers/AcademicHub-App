@@ -4,36 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
 import android.annotation.SuppressLint;
-import android.app.Fragment;
-import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.ColorStateList;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.FrameLayout;
-import android.widget.ImageButton;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.academichub.HomePageFragment.AttendanceFragment;
 import com.example.academichub.HomePageFragment.HomeFragment;
 import com.example.academichub.HomePageFragment.ProfilePage;
-import com.google.android.gms.auth.api.signin.GoogleSignIn;
-import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
-import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 public class HomePage extends AppCompatActivity {
 
@@ -96,7 +77,7 @@ public class HomePage extends AppCompatActivity {
                     popUpClass.showPopupWindow(view);
                 }
                 else {
-                    Intent i = new Intent(getApplicationContext(), CreateClassroom.class);
+                    Intent i = new Intent(getApplicationContext(), CreateClassroomPage.class);
                     startActivity(i);
                 }
             }

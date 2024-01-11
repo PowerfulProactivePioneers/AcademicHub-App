@@ -104,7 +104,7 @@ public class MarkTableActivity extends AppCompatActivity {
                     );
                     linearLayout.setLayoutParams(linearparams);
                     linearLayout.setOrientation(LinearLayout.HORIZONTAL);
-//                    linearLayout.setPadding(10,10,10,10);
+                    linearLayout.setPadding(10,10,10,10);
                     linearLayout.addView(textView);
                     linearLayout.addView(editText);
 
@@ -113,10 +113,10 @@ public class MarkTableActivity extends AppCompatActivity {
                             LinearLayout.LayoutParams.MATCH_PARENT, // Set layout_width to match_parent
                             LinearLayout.LayoutParams.WRAP_CONTENT // Set layout_height to wrap_content
                     );
-//            cardViewParams.setMargins(5, 5, 2, 5); // Set the margin to 2dp
+            cardViewParams.setMargins(5, 5, 2, 5); // Set the margin to 2dp
 
                     cview.setLayoutParams(cardViewParams);
-//                    cview.setPadding(2, 2, 0, 2);
+                    cview.setPadding(2, 2, 0, 2);
                     cview.addView(linearLayout);
 
                     TableRow.LayoutParams trowParams = new TableRow.LayoutParams(

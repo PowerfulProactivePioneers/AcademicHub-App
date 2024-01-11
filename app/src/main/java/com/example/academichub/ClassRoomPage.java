@@ -68,25 +68,27 @@ public class ClassRoomPage extends AppCompatActivity {
                 if(sh.getString("type",null).equals("Faculty"))
                     showDialog();
                 else{
-                    Retrofit retrofit = new Retrofit.Builder()
-                            .baseUrl("https://academichub-restapi.onrender.com/")
-                            .addConverterFactory(GsonConverterFactory.create())
-                            .build();
-                    RetrofitAPI api = retrofit.create(RetrofitAPI.class);
-                    Call<List<AttendanceList>> call = api.getClassWiseAttendance(new StudentMark(sh.getString("id",null),getIntent().getStringExtra("id")));
-                    call.enqueue(new Callback<List<AttendanceList>>() {
-                        @Override
-                        public void onResponse(Call<List<AttendanceList>> call, Response<List<AttendanceList>> response) {
-                            Intent i = new Intent(ClassRoomPage.this,DetailedAttendance.class);
-                            i.putExtra("data",(Serializable) response.body());
-                            startActivity(i);
-                        }
-
-                        @Override
-                        public void onFailure(Call<List<AttendanceList>> call, Throwable t) {
-
-                        }
-                    });
+//                    Retrofit retrofit = new Retrofit.Builder()
+//                            .baseUrl("https://academichub-restapi.onrender.com/")
+//                            .addConverterFactory(GsonConverterFactory.create())
+//                            .build();
+//                    RetrofitAPI api = retrofit.create(RetrofitAPI.class);
+//                    Call<List<AttendanceList>> call = api.getClassWiseAttendance(new StudentMark(sh.getString("id",null),getIntent().getStringExtra("id")));
+//                    call.enqueue(new Callback<List<AttendanceList>>() {
+//                        @Override
+//                        public void onResponse(Call<List<AttendanceList>> call, Response<List<AttendanceList>> response) {
+//                            Intent i = new Intent(ClassRoomPage.this,DetailedAttendance.class);
+//                            i.putExtra("data",(Serializable) response.body());
+//                            startActivity(i);
+//                        }
+//
+//                        @Override
+//                        public void onFailure(Call<List<AttendanceList>> call, Throwable t) {
+//
+//                        }
+//                    });
+                    Intent i = new Intent(ClassRoomPage.this, StudentMarkPage.class);
+                    startActivity(i);
                 }
             }
         });

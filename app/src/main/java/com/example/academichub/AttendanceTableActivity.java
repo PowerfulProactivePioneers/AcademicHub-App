@@ -31,8 +31,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class AttendanceTableActivity extends AppCompatActivity {
-//    String regno[] = {"2127210501110", "2127210501111", "2127210501114","2127210501115","21217210501094", "2127210501063"};
-    
+
     List<String> regno;
     ArrayList<String> present = new ArrayList<>();
     ArrayList<String> absent = new ArrayList<>();

@@ -15,14 +15,10 @@ import android.widget.Toast;
 
 import com.example.academichub.responsePackage.ClassRoomDB;
 import com.example.academichub.responsePackage.Status;
-import com.example.academichub.responsePackage.StudentFacultyDB;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import java.util.Calendar;
 import androidx.appcompat.app.AppCompatActivity;
-
-import static android.view.View.INVISIBLE;
-import static android.view.View.VISIBLE;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -30,7 +26,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class CreateClassroom extends AppCompatActivity {
+public class CreateClassroomPage extends AppCompatActivity {
 
     Button btn;
 

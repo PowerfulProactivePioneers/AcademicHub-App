@@ -3,6 +3,7 @@ package com.example.academichub;
 import com.example.academichub.responsePackage.AttendanceList;
 import com.example.academichub.responsePackage.AttendanceReport;
 import com.example.academichub.responsePackage.ClassRoomDB;
+import com.example.academichub.responsePackage.MarkSchema;
 import com.example.academichub.responsePackage.Post;
 import com.example.academichub.responsePackage.Status;
 import com.example.academichub.responsePackage.StudentClassRoomDB;
@@ -73,5 +74,9 @@ public interface RetrofitAPI {
     @Headers("Content-Type: application/json")
     @POST("/student-all-attendance")
     Call<List<AttendanceReport>> getAllAttendace(@Body String data);
+
+    @Headers("Content-Type: application/json")
+    @POST("/student-mark")
+    Call<List<MarkSchema>> getStudentMarks(@Body StudentMark data);
 
 }
